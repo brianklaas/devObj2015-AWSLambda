@@ -3,8 +3,8 @@
 		aws lambda invoke --function-name devObjCustomEvent --payload '{"key1":"value1", "key2":"value2", "key3":"value3"}' outfile.txt
 --->
 
-<cfset pathToBashScript = "/Users/brianklaas/Dropbox/Presentations/devObj2015-AWSLambda/lambdaInvoke.sh" />
-<cfset pathToOutputFile = "/Users/brianklaas/Dropbox/Presentations/devObj2015-AWSLambda/callResults.txt" />
+<cfset pathToBashScript = "/path/to/your/lambdaInvoke.sh" />
+<cfset pathToOutputFile = "/path/to/your/callResults.txt" />
 
 <!--- ColdFusion 10 and lower upper cases serialization of keys in a structure unless you use array notation to define the keys in the struct. --->
 <cfset payload = {} />
