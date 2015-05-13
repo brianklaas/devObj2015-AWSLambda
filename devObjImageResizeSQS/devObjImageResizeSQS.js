@@ -92,7 +92,7 @@ exports.handler = function(event, context) {
 			};
 			var params = {
 				MessageBody: JSON.stringify(messageBody),
-				QueueUrl: 'https://sqs.us-east-1.amazonaws.com/683830609677/devObjectiveDemoQueue'
+				QueueUrl: 'https://sqs.us-east-1.amazonaws.com/yourAWSAccountID/yourSQSQueueName'
 			};
 			sqs.sendMessage(params, function(err, data) {
 			  if (err) {
