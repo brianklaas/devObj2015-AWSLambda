@@ -92,7 +92,7 @@ exports.handler = function(event, context) {
 			};
 			var params = {
 				Message: JSON.stringify(messageBody),
-				TopicArn: 'arn:aws:sns:us-east-1:683830609677:devObjectivePublishFromLambda'
+				TopicArn: 'arn:aws:sns:us-east-1:yourAmazonAcctID:yourSNSTopicName'
 			};
 			sns.publish(params, function(err, data) {
 			  if (err) {
